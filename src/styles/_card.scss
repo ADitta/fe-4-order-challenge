@@ -1,0 +1,96 @@
+.card {
+  background-color: white;
+  width: 23.5rem;
+  border-radius: 1rem;
+}
+
+.card-img {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  width: 100%;
+  img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    width: 100%;
+  }
+}
+
+.card-container {
+  padding: 2rem 2rem;
+}
+
+.card-info {
+  width: 100%;
+  padding: 0rem 1.5rem;
+}
+
+.plan {
+  background-color: $very-pale-blue;
+  //   border: 1px solid black;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.8rem 0rem 1.2rem;
+  .left {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 1rem;
+    }
+    #plan-title {
+      font-weight: 900;
+      color: $dark-blue;
+    }
+  }
+  #change {
+    color: $bright-blue;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 0.85rem;
+    transition: all 0.2s ease-in-out;
+    &:active {
+      color: hsl(245, 79%, 63%);
+      text-decoration: none;
+    }
+  }
+}
+
+#payment-btn {
+  width: 100%;
+  color: white;
+  background-color: $btn-color;
+  border-radius: 0.8rem;
+  border: none;
+  padding: 1.2rem 0rem;
+  margin: 0.5rem 0rem;
+  font-weight: 700;
+  font-size: 1rem;
+  box-shadow: 0px 15px 25px 10px rgba(66, 50, 138, 0.3);
+  transition: all 0.2s ease-in-out;
+  &:active {
+    background-color: hsl(245, 79%, 63%);
+  }
+}
+
+#cancel {
+  color: $desaturated-blue;
+  font-weight: 900;
+  font-size: 1rem;
+  margin: 1.3rem 0rem 1.5rem;
+  transition: all 0.2s ease-in-out;
+  &:active {
+    color: $dark-blue;
+  }
+}
+
+@media (min-width: 1000px) {
+  .card {
+    width: 28rem;
+  }
+  .card-container {
+    padding: 2rem 2.5rem;
+  }
+}
